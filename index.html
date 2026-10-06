@@ -21,7 +21,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Cinzel:wght@600;700;800&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
     <script>
         tailwind.config = {
             theme: {
@@ -67,8 +67,6 @@
         .ba-handle { position: absolute; top: 0; bottom: 0; width: 44px; margin-left: -22px; cursor: ew-resize; z-index: 10; display: flex; align-items: center; justify-content: center; }
         .ba-line { position: absolute; top: 0; bottom: 0; width: 2px; background: #fff; left: 50%; }
         .ba-knob { position: relative; width: 44px; height: 44px; border-radius: 9999px; background: #fff; color: #111827; display: flex; align-items: center; justify-content: center; box-shadow: 0 8px 24px rgba(0,0,0,.28); }
-        @keyframes floaty { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
-        .animate-floaty { animation: floaty 4s ease-in-out infinite; }
     </style>
 </head>
 <body class="bg-white text-ink-900 font-sans">
@@ -115,7 +113,7 @@
                 <a href="#top" class="flex items-center gap-3">
                     <span class="w-10 h-10 rounded-lg bg-ink-900 text-accent-500 flex items-center justify-center text-lg font-display font-bold">DS</span>
                     <span class="leading-tight">
-                        <span class="block font-display font-700 text-lg sm:text-xl text-ink-900 tracking-tight">DS CONSTRUCTION <span class="text-accent-600">S.R.L.</span></span>
+                        <span class="block font-display font-bold text-lg sm:text-xl text-ink-900 tracking-tight">DS CONSTRUCTION <span class="text-accent-600">S.R.L.</span></span>
                         <span class="block text-[10px] sm:text-[11px] uppercase tracking-[0.18em] text-ink-500">General Contractor Milano</span>
                     </span>
                 </a>
@@ -161,10 +159,10 @@
             </div>
             <div class="relative z-10 max-w-7xl mx-auto px-4 py-24 md:py-32 w-full">
                 <div class="max-w-2xl">
-                    <span class="inline-flex items-center gap-2 rounded-full bg-white/10 border border-white/20 backdrop-blur px-4 py-1.5 text-xs sm:text-sm font-semibold text-accent-400">
+                    <span class="inline-flex items-center gap-2 rounded-full bg-white/10 border border-white/25 backdrop-blur px-4 py-1.5 text-xs sm:text-sm font-semibold text-accent-400">
                         <i class="fa-solid fa-star"></i> 5.0 ★★★★★ su Google Maps · Via Vincenzo Monti 8, Milano
                     </span>
-                    <h1 class="mt-6 font-display text-3xl sm:text-5xl lg:text-6xl font-700 text-white leading-[1.1] tracking-tight">
+                    <h1 class="mt-6 font-display text-3xl sm:text-5xl lg:text-6xl font-bold text-white leading-[1.1] tracking-tight">
                         General Contractor &amp; <span class="text-accent-500">Impresa Edile d'Eccellenza.</span>
                     </h1>
                     <p class="mt-5 text-lg sm:text-xl text-white/85 leading-relaxed max-w-xl">
@@ -188,10 +186,10 @@
                 <div class="grid lg:grid-cols-2 gap-10 items-center">
                     <div class="reveal">
                         <span class="inline-block text-accent-400 text-xs font-bold uppercase tracking-[0.2em] mb-3">Reputazione online</span>
-                        <h2 class="font-display text-3xl md:text-4xl font-700 leading-tight">La qualità certificata da <span class="text-accent-400">Google Maps.</span></h2>
+                        <h2 class="font-display text-3xl md:text-4xl font-bold leading-tight">La qualità certificata da <span class="text-accent-400">Google Maps.</span></h2>
                         <div class="mt-6 flex items-center gap-4">
                             <div class="flex flex-col items-center justify-center w-28 h-28 rounded-2xl bg-white/5 border border-white/10">
-                                <span class="font-display text-4xl font-700 text-white">5.0</span>
+                                <span class="font-display text-4xl font-bold text-white">5.0</span>
                                 <span class="text-accent-400 text-sm tracking-wide">★★★★★</span>
                             </div>
                             <div class="text-white/80">
@@ -230,14 +228,14 @@
                     <div class="relative">
                         <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80" alt="Progetto DS Construction Milano" class="rounded-3xl w-full object-cover shadow-xl" style="aspect-ratio: 4/5;">
                         <div class="absolute -bottom-5 -right-3 sm:right-6 bg-ink-900 border border-accent-500/30 text-white rounded-2xl px-6 py-4 shadow-lg">
-                            <span class="block font-display text-2xl font-700 text-accent-400 leading-none">MILANO</span>
+                            <span class="block font-display text-2xl font-bold text-accent-400 leading-none">MILANO</span>
                             <span class="text-xs uppercase tracking-widest text-white/70">Via Vincenzo Monti 8</span>
                         </div>
                     </div>
                 </div>
                 <div class="reveal order-1 lg:order-2">
                     <span class="inline-block text-accent-600 text-xs font-bold uppercase tracking-[0.2em] mb-3">Chi siamo</span>
-                    <h2 class="font-display text-3xl md:text-4xl font-700 leading-tight text-ink-900">DS Construction Srl — <span class="text-accent-600">Ingegneria e Visione Edile.</span></h2>
+                    <h2 class="font-display text-3xl md:text-4xl font-bold leading-tight text-ink-900">DS Construction Srl — <span class="text-accent-600">Ingegneria e Visione Edile.</span></h2>
                     <p class="mt-5 text-ink-600 leading-relaxed text-lg">
                         Con sede nel cuore di Milano, in <strong class="text-ink-900">Via Vincenzo Monti 8</strong>, operiamo come General Contractor e impresa di costruzioni gestendo progetti complessi sia nel settore residenziale che commerciale.
                     </p>
@@ -264,7 +262,7 @@
             <div class="max-w-7xl mx-auto px-4">
                 <div class="max-w-2xl reveal">
                     <span class="inline-block text-accent-600 text-xs font-bold uppercase tracking-[0.2em] mb-3">I nostri servizi</span>
-                    <h2 class="font-display text-3xl md:text-4xl font-700 leading-tight text-ink-900">Soluzioni edili a 360 gradi <span class="text-accent-600">per ogni esigenza.</span></h2>
+                    <h2 class="font-display text-3xl md:text-4xl font-bold leading-tight text-ink-900">Soluzioni edili a 360 gradi <span class="text-accent-600">per ogni esigenza.</span></h2>
                     <p class="mt-4 text-ink-600 text-lg">Esplora le nostre aree di intervento specializzate nel settore delle costruzioni.</p>
                 </div>
 
@@ -331,16 +329,18 @@
             <div class="max-w-7xl mx-auto px-4">
                 <div class="max-w-2xl reveal">
                     <span class="inline-block text-accent-600 text-xs font-bold uppercase tracking-[0.2em] mb-3">Portfolio cantieri</span>
-                    <h2 class="font-display text-3xl md:text-4xl font-700 leading-tight text-ink-900">La trasformazione, <span class="text-accent-600">prima e dopo.</span></h2>
+                    <h2 class="font-display text-3xl md:text-4xl font-bold leading-tight text-ink-900">La trasformazione, <span class="text-accent-600">prima e dopo.</span></h2>
                     <p class="mt-4 text-ink-600 text-lg">Trascina il cursore per visualizzare l'impatto dei nostri interventi a Milano.</p>
                 </div>
 
                 <div class="mt-10 reveal">
-                    <div id="ba" class="relative overflow-hidden rounded-3xl shadow-xl select-none cursor-ew-resize" style="touch-action: pan-y;">
-                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80" alt="Immobile ultimato — dopo" class="block w-full object-cover" style="height: 380px;">
-                        <img id="ba-before" src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=80" alt="Cantiere in corso — prima" class="absolute inset-0 w-full h-full object-cover" style="clip-path: inset(0 50% 0 0);">
-                        <span class="absolute top-4 left-4 bg-ink-950/80 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-full z-10">Prima (Cantiere)</span>
-                        <span class="absolute top-4 right-4 bg-accent-500 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-full z-10">Dopo (Finito)</span>
+                    <div id="ba" class="relative overflow-hidden rounded-3xl shadow-xl select-none cursor-ew-resize bg-ink-900" style="touch-action: pan-y; height: 380px;">
+                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80" alt="Immobile ultimato — dopo" class="block w-full h-full object-cover">
+                        <div id="ba-before" class="absolute inset-0 w-full h-full overflow-hidden" style="clip-path: inset(0 50% 0 0);">
+                            <img src="https://images.unsplash.com/photo-1541888946425-d0fbb18f253e?auto=format&fit=crop&w=1200&q=80" alt="Cantiere in corso — prima" class="absolute inset-0 w-full h-full object-cover max-w-none" style="width: 100%; height: 100%;">
+                        </div>
+                        <span class="absolute top-4 left-4 bg-ink-950/80 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-full z-10 backdrop-blur">Prima (Cantiere)</span>
+                        <span class="absolute top-4 right-4 bg-accent-500 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-full z-10 shadow">Dopo (Finito)</span>
                         <div id="ba-handle" class="ba-handle" style="left: 50%;">
                             <span class="ba-line"></span>
                             <span class="ba-knob"><i class="fa-solid fa-left-right"></i></span>
@@ -350,8 +350,8 @@
 
                 <div class="mt-10 grid md:grid-cols-3 gap-6 reveal">
                     <article class="group rounded-2xl overflow-hidden border border-ink-100 shadow-sm hover:shadow-lg transition">
-                        <div class="overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80" alt="Uffici Direzionali Milano" class="w-full object-cover group-hover:scale-105 transition duration-500" style="aspect-ratio: 16/10;">
+                        <div class="overflow-hidden bg-ink-100" style="aspect-ratio: 16/10;">
+                            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80" alt="Uffici Direzionali Milano" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                         </div>
                         <div class="p-5">
                             <div class="flex flex-wrap gap-2 mb-3">
@@ -363,8 +363,8 @@
                         </div>
                     </article>
                     <article class="group rounded-2xl overflow-hidden border border-ink-100 shadow-sm hover:shadow-lg transition">
-                        <div class="overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=800&q=80" alt="Residenza di Lusso Milano" class="w-full object-cover group-hover:scale-105 transition duration-500" style="aspect-ratio: 16/10;">
+                        <div class="overflow-hidden bg-ink-100" style="aspect-ratio: 16/10;">
+                            <img src="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=800&q=80" alt="Residenza di Lusso Milano" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                         </div>
                         <div class="p-5">
                             <div class="flex flex-wrap gap-2 mb-3">
@@ -376,8 +376,8 @@
                         </div>
                     </article>
                     <article class="group rounded-2xl overflow-hidden border border-ink-100 shadow-sm hover:shadow-lg transition">
-                        <div class="overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1541888946425-d0fbb18f253e?auto=format&fit=crop&w=800&q=80" alt="Strutture e Grandi Cantieri" class="w-full object-cover group-hover:scale-105 transition duration-500" style="aspect-ratio: 16/10;">
+                        <div class="overflow-hidden bg-ink-100" style="aspect-ratio: 16/10;">
+                            <img src="https://images.unsplash.com/photo-1541888946425-d0fbb18f253e?auto=format&fit=crop&w=800&q=80" alt="Strutture e Grandi Cantieri" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                         </div>
                         <div class="p-5">
                             <div class="flex flex-wrap gap-2 mb-3">
@@ -397,7 +397,7 @@
             <div class="max-w-7xl mx-auto px-4">
                 <div class="max-w-2xl reveal">
                     <span class="inline-block text-accent-400 text-xs font-bold uppercase tracking-[0.2em] mb-3">Metodo di lavoro</span>
-                    <h2 class="font-display text-3xl md:text-4xl font-700 leading-tight">Rigore e pianificazione, <span class="text-accent-400">senza compromessi.</span></h2>
+                    <h2 class="font-display text-3xl md:text-4xl font-bold leading-tight">Rigore e pianificazione, <span class="text-accent-400">senza compromessi.</span></h2>
                 </div>
                 <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-6 reveal">
                     <div class="bg-white/5 border border-white/10 rounded-2xl p-6">
@@ -429,7 +429,7 @@
             <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <div>
                     <span class="text-accent-600 text-xs font-bold uppercase tracking-[0.2em] mb-3 block">Direzione &amp; Sede</span>
-                    <h2 class="font-display text-3xl md:text-4xl font-700 text-ink-900 mb-6">Contatta DS Construction Srl</h2>
+                    <h2 class="font-display text-3xl md:text-4xl font-bold text-ink-900 mb-6">Contatta DS Construction Srl</h2>
                     <p class="text-ink-600 text-lg mb-8">Disponibili per incontri conoscitivi e consulenze tecniche presso la nostra sede di Milano o direttamente in cantiere.</p>
                     
                     <div class="space-y-5 text-ink-700">
@@ -457,13 +457,13 @@
                     </div>
 
                     <div class="mt-8">
-                        <a href="https://wa.me/393291742818?text=Buongiorno%20DS%20Construction%2C%20vorrei%20richiedere%20un%20sopralluogo." target="_blank" rel="noopener" class="inline-flex items-center gap-3 px-6 py-3.5 rounded-xl bg-emerald-600 text-white font-bold hover:bg-emerald-700 transition">
+                        <a href="https://wa.me/393291742818?text=Buongiorno%20DS%20Construction%2C%20vorrei%20richiedere%20un%20sopralluogo." target="_blank" rel="noopener" class="inline-flex items-center gap-3 px-6 py-3.5 rounded-xl bg-emerald-600 text-white font-bold hover:bg-emerald-700 transition shadow-md">
                             <i class="fa-brands fa-whatsapp text-2xl"></i> Chat WhatsApp Diretta
                         </a>
                     </div>
                 </div>
                 
-                <div class="rounded-3xl overflow-hidden border border-ink-200 h-96 shadow-lg">
+                <div class="rounded-3xl overflow-hidden border border-ink-200 h-96 shadow-lg bg-ink-50">
                     <iframe 
                         title="Mappa DS Construction Milano Via Vincenzo Monti"
                         width="100%" 

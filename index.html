@@ -153,7 +153,7 @@
 
     <main id="top">
 
-        <!-- HERO SECTION -->
+        <!-- HERO SECTION CON IMMAGINE DI SFONDO E BADGE FLOTTANTI -->
         <section class="relative min-h-[90vh] flex items-center overflow-hidden bg-ink-950 pt-16 pb-20">
             <div class="absolute inset-0 z-0">
                 <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80" alt="Villa di lusso ristrutturata DS Construction Milano" class="w-full h-full object-cover opacity-45">
@@ -176,7 +176,7 @@
                         </a>
                     </div>
 
-                    <!-- 3 BADGE FLOTTANTI -->
+                    <!-- 3 BADGE FLOTTANTI NELL'HERO -->
                     <div class="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-4 pt-6 border-t border-white/10">
                         <div class="flex items-center gap-3 bg-white/10 backdrop-blur-md border border-white/15 p-4 rounded-2xl">
                             <span class="w-10 h-10 shrink-0 rounded-xl bg-accent-500 text-white flex items-center justify-center"><i class="fa-solid fa-award"></i></span>
@@ -204,7 +204,7 @@
             </div>
         </section>
 
-        <!-- RECENSIONI -->
+        <!-- SOCIAL PROOF / RECENSIONI -->
         <section id="recensioni" class="py-16 md:py-20 bg-ink-950 text-white border-t border-white/10">
             <div class="max-w-7xl mx-auto px-4">
                 <div class="grid lg:grid-cols-2 gap-10 items-center">
@@ -284,7 +284,7 @@
             </div>
         </section>
 
-        <!-- SERVIZI ACCORDION -->
+        <!-- SERVIZI ACCORDION CON ICONE AGGIORNATE -->
         <section id="servizi" class="py-16 md:py-24 bg-ink-50">
             <div class="max-w-7xl mx-auto px-4">
                 <div class="max-w-2xl reveal">
@@ -541,9 +541,10 @@
         </div>
     </footer>
 
-    <!-- SCRIPT -->
+    <!-- SCRIPT DI FUNZIONALITÀ -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
+            // Menu mobile toggle
             const toggleBtn = document.getElementById('menu-toggle');
             const mobileMenu = document.getElementById('mobile-menu');
             if (toggleBtn && mobileMenu) {
@@ -555,6 +556,7 @@
                 });
             }
 
+            // Accordion Servizi
             document.querySelectorAll('.service-toggle').forEach(btn => {
                 btn.addEventListener('click', () => {
                     const item = btn.closest('.service-item');
@@ -582,6 +584,7 @@
                 });
             });
 
+            // Scroll Reveal Animation
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
@@ -592,6 +595,7 @@
 
             document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
+            // Before / After Slider
             const ba = document.getElementById('ba');
             const baBefore = document.getElementById('ba-before');
             const baHandle = document.getElementById('ba-handle');

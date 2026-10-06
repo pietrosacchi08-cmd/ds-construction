@@ -1,367 +1,209 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="it" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DS Construction Srl — General Contractor &amp; Impresa Edile | Milano</title>
-    <meta name="description" content="DS Construction Srl: Impresa edile e General Contractor in Via Vincenzo Monti 8, Milano. Ristrutturazioni di pregio, nuove costruzioni e soluzioni edili chiavi in mano.">
-    <link rel="canonical" href="https://pietrosacchi08-cmd.github.io/ds-construction/">
-    
-    <!-- Open Graph -->
-    <meta property="og:title" content="DS Construction Srl — General Contractor &amp; Impresa Edile a Milano">
-    <meta property="og:description" content="Eccellenza, solidità e gestione chiavi in mano per grandi progetti e ristrutturazioni a Milano.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://pietrosacchi08-cmd.github.io/ds-construction/">
-    <meta property="og:locale" content="it_IT">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80">
-    
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗</text></svg>">
+    <title>DS Construction Srl | General Contractor & Ristrutturazioni di Lusso a Milano</title>
+    <meta name="description" content="Ristrutturazioni complete di ville, attici e spazi commerciali a Milano. General contractor d'eccellenza, finiture sartoriali e gestione chiavi in mano.">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Cinzel:wght@600;700;800&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        'sans': ['Manrope', 'system-ui', 'sans-serif'],
-                        'display': ['Cinzel', 'Georgia', 'serif'],
-                    },
-                    colors: {
-                        ink: {
-                            50: '#f6f7f9',
-                            100: '#eceef2',
-                            200: '#d4d9e2',
-                            300: '#aeb7c7',
-                            400: '#8390a6',
-                            500: '#64728c',
-                            600: '#4f5b73',
-                            700: '#414a5e',
-                            800: '#383f50',
-                            900: '#111827',
-                            950: '#0b0f19',
-                        },
-                        accent: {
-                            50: '#fdf4f0',
-                            100: '#fbe8e1',
-                            500: '#e05a30',
-                            600: '#c84720',
-                            700: '#a63919',
-                        },
-                    },
-                },
-            },
-        }
-    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
-        html { scroll-behavior: smooth; }
-        body { -webkit-font-smoothing: antialiased; }
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
     </style>
 </head>
-<body class="bg-white text-ink-900 font-sans">
+<body class="bg-slate-50 text-slate-900 antialiased selection:bg-amber-500 selection:text-white">
 
-    <!-- TOP BAR -->
-    <header class="sticky top-0 z-50">
-        <div class="bg-ink-950 text-white/90 text-xs">
-            <div class="max-w-7xl mx-auto px-4 py-2 flex items-center justify-between gap-3">
-                <div class="flex items-center gap-4">
-                    <span class="inline-flex items-center gap-1.5"><i class="fa-solid fa-location-dot text-accent-500"></i> Via Vincenzo Monti 8, Milano</span>
-                    <span class="hidden md:inline-flex items-center gap-1.5"><i class="fa-solid fa-award text-accent-500"></i> General Contractor &amp; Impresa Edile</span>
-                </div>
-                <a href="tel:+393291742818" class="inline-flex items-center gap-1.5 hover:text-accent-400 transition font-semibold"><i class="fa-solid fa-phone text-accent-500"></i> +39 329 174 2818</a>
+    <!-- Header / Navbar -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <span class="text-xl font-extrabold tracking-tight text-slate-900">DS <span class="text-amber-600">CONSTRUCTION</span></span>
             </div>
-        </div>
-        
-        <!-- MAIN NAVBAR -->
-        <div class="bg-white/95 backdrop-blur border-b border-ink-100 shadow-sm">
-            <div class="max-w-7xl mx-auto px-4 h-20 flex items-center justify-between">
-                <a href="#" class="flex items-center gap-3">
-                    <span class="w-11 h-11 rounded-xl bg-ink-900 text-accent-500 flex items-center justify-center text-xl font-display font-bold shadow-md">DS</span>
-                    <span class="leading-tight">
-                        <span class="block font-display font-bold text-lg sm:text-xl text-ink-900 tracking-tight">DS CONSTRUCTION <span class="text-accent-600">S.R.L.</span></span>
-                        <span class="block text-[10px] uppercase tracking-[0.2em] text-ink-500 font-semibold">GENERAL CONTRACTOR MILANO</span>
-                    </span>
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-600">
+                <a href="#servizi" class="hover:text-amber-600 transition">Servizi</a>
+                <a href="#cantiere" class="hover:text-amber-600 transition">Metodo Prima/Dopo</a>
+                <a href="#recensioni" class="hover:text-amber-600 transition">Recensioni</a>
+                <a href="#contatti" class="hover:text-amber-600 transition">Contatti</a>
+            </nav>
+            <div class="flex items-center space-x-4">
+                <a href="tel:+393291742818" class="hidden sm:inline-flex items-center text-sm font-semibold text-slate-900 hover:text-amber-600 transition">
+                    <svg class="w-4 h-4 mr-2 text-amber-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                    +39 329 174 2818
                 </a>
-                
-                <nav class="hidden lg:flex items-center gap-8 text-sm font-semibold text-ink-700">
-                    <a href="#servizi" class="hover:text-accent-600 transition">Servizi</a>
-                    <a href="#trasformazione" class="hover:text-accent-600 transition">Prima / Dopo</a>
-                    <a href="#progetti" class="hover:text-accent-600 transition">Progetti</a>
-                    <a href="#recensioni" class="hover:text-accent-600 transition">Recensioni</a>
-                    <a href="#contatti" class="hover:text-accent-600 transition">Contatti</a>
-                </nav>
-
-                <div class="flex items-center gap-3">
-                    <a href="https://wa.me/393291742818?text=Buongiorno%20DS%20Construction%2C%20vorrei%20ricevere%20maggiori%20informazioni%20per%20un%20progetto." target="_blank" rel="noopener" class="inline-flex items-center gap-2 h-11 px-5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm shadow-md transition">
-                        <i class="fa-brands fa-whatsapp text-lg"></i> WhatsApp
-                    </a>
-                </div>
+                <a href="#contatti" class="bg-slate-900 hover:bg-amber-600 text-white px-5 py-2.5 rounded-xl font-medium text-sm transition shadow-sm">
+                    Richiedi Preventivo
+                </a>
             </div>
         </div>
     </header>
 
-    <!-- HERO -->
-    <section class="relative min-h-[85vh] flex items-center bg-ink-950 py-20 overflow-hidden">
-        <div class="absolute inset-0 z-0">
-            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80" alt="Ristrutturazioni di lusso Milano DS Construction" class="w-full h-full object-cover opacity-40">
-            <div class="absolute inset-0 bg-gradient-to-r from-ink-950 via-ink-950/80 to-transparent"></div>
-        </div>
-        
-        <div class="relative z-10 max-w-7xl mx-auto px-4 w-full">
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 md:pt-44 md:pb-32 overflow-hidden bg-slate-900 text-white">
+        <div class="absolute inset-0 opacity-20 bg-[radial-gradient(#fbbf24_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="max-w-3xl">
-                <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-accent-500/20 border border-accent-500/30 text-accent-300 text-xs font-bold uppercase tracking-wider mb-6">
-                    <i class="fa-solid fa-star text-accent-400"></i> Eccellenza Edile a Milano · Via Vincenzo Monti 8
+                <div class="inline-flex items-center space-x-2 bg-amber-500/10 border border-amber-500/20 text-amber-400 px-3.5 py-1.5 rounded-full text-xs font-semibold mb-6">
+                    <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
+                    <span>Eccellenza Edilizia a Milano & Lombardia</span>
                 </div>
-                <h1 class="font-display text-4xl sm:text-6xl font-bold text-white leading-[1.1] tracking-tight">
-                    Ristrutturazioni di pregio e <span class="text-accent-500">General Contractor.</span>
+                <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight leading-tight mb-6">
+                    General Contractor per <span class="text-amber-500">Ristrutturazioni di Lusso</span>
                 </h1>
-                <p class="mt-6 text-lg sm:text-xl text-white/80 leading-relaxed max-w-2xl">
-                    Gestione chiavi in mano di appartamenti, ville e spazi commerciali a Milano. Un unico interlocutore d'élite per coordinare ogni fase del cantiere senza stress né ritardi.
+                <p class="text-lg sm:text-xl text-slate-300 mb-10 font-light leading-relaxed">
+                    Dalla progettazione sartoriale alla consegna chiavi in mano. Realizziamo attici, ville e spazi commerciali esclusivi a Milano con standard qualitativi senza compromessi.
                 </p>
-                <div class="mt-8 flex flex-col sm:flex-row gap-4">
-                    <a href="https://wa.me/393291742818?text=Buongiorno%20DS%20Construction%2C%20vorrei%20richiedere%20un%20sopralluogo." target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 h-14 px-8 rounded-xl bg-accent-500 hover:bg-accent-600 text-white font-bold text-base shadow-lg shadow-accent-500/30 transition">
-                        <i class="fa-brands fa-whatsapp text-xl"></i> Richiedi Sopralluogo Gratuito
+                <div class="flex flex-col sm:flex-row items-stretch sm:items-center space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#contatti" class="bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold px-8 py-4 rounded-xl text-center transition shadow-lg shadow-amber-500/20">
+                        Parla con un Tecnico
                     </a>
-                    <a href="#progetti" class="inline-flex items-center justify-center gap-2 h-14 px-8 rounded-xl bg-white/10 hover:bg-white/20 border border-white/20 text-white font-bold text-base backdrop-blur transition">
-                        Esplora i Cantieri <i class="fa-solid fa-arrow-down"></i>
+                    <a href="#servizi" class="border border-slate-700 hover:border-slate-500 text-white font-medium px-8 py-4 rounded-xl text-center transition">
+                        Scopri i Servizi
                     </a>
                 </div>
-
-                <!-- TRUST METRICS -->
-                <div class="mt-14 grid grid-cols-3 gap-6 pt-8 border-t border-white/10">
+                <!-- Trust indicators -->
+                <div class="mt-12 pt-8 border-t border-slate-800 grid grid-cols-3 gap-6">
                     <div>
-                        <p class="font-display text-3xl font-bold text-white">5.0</p>
-                        <p class="text-xs text-accent-400 mt-1">★★★★★ Google Maps</p>
+                        <p class="text-2xl font-bold text-amber-400">5.0 / 5</p>
+                        <p class="text-xs text-slate-400 mt-1">Recensioni Google Maps (Leveline Fanta)</p>
                     </div>
                     <div>
-                        <p class="font-display text-3xl font-bold text-white">100%</p>
-                        <p class="text-xs text-white/60 mt-1">Chiavi in Mano</p>
+                        <p class="text-2xl font-bold text-white">Chiavi in Mano</p>
+                        <p class="text-xs text-slate-400 mt-1">Gestione burocratica e tecnica totale</p>
                     </div>
                     <div>
-                        <p class="font-display text-3xl font-bold text-white">Milano</p>
-                        <p class="text-xs text-white/60 mt-1">Via Vincenzo Monti</p>
+                        <p class="text-2xl font-bold text-white">Milano</p>
+                        <p class="text-xs text-slate-400 mt-1">Via Vincenzo Monti 8</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- SERVIZI -->
-    <section id="servizi" class="py-24 bg-ink-50">
-        <div class="max-w-7xl mx-auto px-4">
+    <!-- Servizi Section -->
+    <section id="servizi" class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-2xl mx-auto mb-16">
-                <span class="text-accent-600 text-xs font-bold uppercase tracking-[0.2em] mb-2 block">Cosa facciamo</span>
-                <h2 class="font-display text-3xl sm:text-4xl font-bold text-ink-900">Soluzioni edili su misura</h2>
-                <p class="text-ink-600 mt-3 text-lg">Dalla demolizione alle finiture di design, seguiamo ogni dettaglio con ingegneri e maestranze qualificate.</p>
+                <h2 class="text-xs font-bold uppercase tracking-widest text-amber-600 mb-3">I Nostri Ambiti</h2>
+                <h3 class="text-3xl font-extrabold text-slate-900 tracking-tight">Competenze e Soluzioni su Misura</h3>
             </div>
-
-            <div class="grid md:grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Servizio 1 -->
-                <div class="bg-white rounded-2xl p-8 border border-ink-100 shadow-sm hover:shadow-md transition">
-                    <div class="w-14 h-14 rounded-2xl bg-ink-900 text-accent-400 flex items-center justify-center text-2xl mb-6 shadow">
-                        <i class="fa-solid fa-building-user"></i>
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200/80 hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-slate-900 rounded-xl flex items-center justify-center mb-6 text-white shadow-md">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
                     </div>
-                    <h3 class="font-bold text-xl text-ink-900 mb-3">Ristrutturazioni Complete</h3>
-                    <p class="text-ink-600 text-sm leading-relaxed">
-                        Appartamenti, attici e ville a Milano. Progettazione architettonica, impianti tecnologici all'avanguardia e finiture sartoriali di lusso.
-                    </p>
+                    <h4 class="text-xl font-bold text-slate-900 mb-3">Ristrutturazioni Complete</h4>
+                    <p class="text-slate-600 text-sm leading-relaxed">Appartamenti, attici e ville a Milano. Progettazione architettonica, impianti tecnologici all'avanguardia e finiture sartoriali di lusso.</p>
                 </div>
-
                 <!-- Servizio 2 -->
-                <div class="bg-white rounded-2xl p-8 border border-ink-100 shadow-sm hover:shadow-md transition">
-                    <div class="w-14 h-14 rounded-2xl bg-ink-900 text-accent-400 flex items-center justify-center text-2xl mb-6 shadow">
-                        <i class="fa-solid fa-store"></i>
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200/80 hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-slate-900 rounded-xl flex items-center justify-center mb-6 text-white shadow-md">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
                     </div>
-                    <h3 class="font-bold text-xl text-ink-900 mb-3">Spazi Commerciali &amp; Uffici</h3>
-                    <p class="text-ink-600 text-sm leading-relaxed">
-                        Riqualificazione di showroom, negozi e uffici direzionali. Ottimizzazione degli spazi aziendali e rispetto rigoroso dei tempi di consegna.
-                    </p>
+                    <h4 class="text-xl font-bold text-slate-900 mb-3">Spazi Commerciali & Uffici</h4>
+                    <p class="text-slate-600 text-sm leading-relaxed">Riqualificazione di showroom, negozi e uffici direzionali. Ottimizzazione degli spazi aziendali e rispetto rigoroso dei tempi di consegna.</p>
                 </div>
-
                 <!-- Servizio 3 -->
-                <div class="bg-white rounded-2xl p-8 border border-ink-100 shadow-sm hover:shadow-md transition">
-                    <div class="w-14 h-14 rounded-2xl bg-ink-900 text-accent-400 flex items-center justify-center text-2xl mb-6 shadow">
-                        <i class="fa-solid fa-helmet-safety"></i>
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200/80 hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-slate-900 rounded-xl flex items-center justify-center mb-6 text-white shadow-md">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path></svg>
                     </div>
-                    <h3 class="font-bold text-xl text-ink-900 mb-3">General Contractor</h3>
-                    <p class="text-ink-600 text-sm leading-relaxed">
-                        Gestione totale della commessa: pratiche burocratiche, permessi edilizi, coordinamento maestranze e direzione lavori certificata.
+                    <h4 class="text-xl font-bold text-slate-900 mb-3">General Contractor</h4>
+                    <p class="text-slate-600 text-sm leading-relaxed">Gestione totale della commessa: pratiche burocratiche, permessi edilizi, coordinamento maestranze e direzione lavori certificata.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cantiere Section (Prima) -->
+    <section id="cantiere" class="py-24 bg-white border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-xs font-bold uppercase tracking-widest text-amber-600 mb-3">Trasparenza di Cantiere</h2>
+                <h3 class="text-3xl font-extrabold text-slate-900 tracking-tight">Dal Grezzo al Risultato Finito</h3>
+            </div>
+            <div class="max-w-4xl mx-auto bg-slate-50 border border-slate-200 rounded-3xl overflow-hidden shadow-sm">
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1541888946425-d0fbb18f154d?auto=format&fit=crop&w=1200&q=80" alt="Cantiere in corso Prima" class="w-full h-72 sm:h-96 object-cover">
+                    <div class="absolute top-4 left-4 bg-slate-900/90 text-white text-xs font-bold px-4 py-2 rounded-xl backdrop-blur-sm flex items-center space-x-2">
+                        <svg class="w-4 h-4 text-amber-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/></svg>
+                        <span>PRIMA (STATO DI CANTIERE)</span>
+                    </div>
+                </div>
+                <div class="p-8 sm:p-10">
+                    <h4 class="text-2xl font-bold text-slate-900 mb-3">Demolizione e Sventramento</h4>
+                    <p class="text-slate-600 leading-relaxed">Preparazione degli impianti, rifacimento strutturale e ottimizzazione della pianta originaria eseguita con rigorosi protocolli di sicurezza e pulizia.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contatti & Business Info Section -->
+    <section id="contatti" class="py-24 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-xs font-bold uppercase tracking-widest text-amber-500 mb-3">Contattaci Ora</h2>
+                    <h3 class="text-3xl sm:text-4xl font-extrabold tracking-tight mb-6">Parliamo del tuo prossimo progetto a Milano</h3>
+                    <p class="text-slate-300 mb-8 leading-relaxed font-light">
+                        Affida la tua ristrutturazione a professionisti qualificati. Contattaci direttamente telefonicamente o via WhatsApp per un primo colloquio tecnico conoscitivo.
                     </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- TRASFORMAZIONE PRIMA / DOPO (Affiancata, solida e senza bug JS) -->
-    <section id="trasformazione" class="py-24 bg-white border-t border-ink-100">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="text-center max-w-2xl mx-auto mb-16">
-                <span class="text-accent-600 text-xs font-bold uppercase tracking-[0.2em] mb-2 block">La nostra competenza</span>
-                <h2 class="font-display text-3xl sm:text-4xl font-bold text-ink-900">Trasformazioni reali</h2>
-                <p class="text-ink-600 mt-3 text-lg">Guarda il passaggio netto tra lo stato grezzo di cantiere e la consegna finita di lusso.</p>
-            </div>
-
-            <div class="grid md:grid-cols-2 gap-8">
-                <!-- PRIMA -->
-                <div class="relative rounded-3xl overflow-hidden shadow-lg border border-ink-200">
-                    <img src="https://images.unsplash.com/photo-1541888946425-d0fbb18f253e?auto=format&fit=crop&w=1000&q=80" alt="Cantiere in corso Prima" class="w-full h-80 object-cover">
-                    <div class="absolute top-4 left-4 bg-ink-950/80 text-white font-bold text-xs uppercase tracking-wider px-4 py-2 rounded-full backdrop-blur">
-                        <i class="fa-solid fa-hammer mr-1 text-accent-500"></i> Prima (Stato di Cantiere)
-                    </div>
-                    <div class="p-6 bg-white">
-                        <h3 class="font-bold text-lg text-ink-900">Demolizione e Sventramento</h3>
-                        <p class="text-ink-600 text-sm mt-1">Preparazione degli impianti, rifacimento strutturale e ottimizzazione della pianta originaria.</p>
-                    </div>
-                </div>
-
-                <!-- DOPO -->
-                <div class="relative rounded-3xl overflow-hidden shadow-lg border border-accent-500/30">
-                    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1000&q=80" alt="Appartamento lusso ultimato Dopo" class="w-full h-80 object-cover">
-                    <div class="absolute top-4 left-4 bg-accent-500 text-white font-bold text-xs uppercase tracking-wider px-4 py-2 rounded-full shadow">
-                        <i class="fa-solid fa-check mr-1"></i> Dopo (Risultato Finito)
-                    </div>
-                    <div class="p-6 bg-white">
-                        <h3 class="font-bold text-lg text-ink-900">Consegna Chiavi in Mano</h3>
-                        <p class="text-ink-600 text-sm mt-1">Finiture di alto pregio, design contemporaneo e spazi luminosi pronti da vivere a Milano.</p>
+                    <div class="space-y-4 text-slate-300">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 shrink-0">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                            </div>
+                            <div>
+                                <strong class="block text-white font-semibold">Sede Ufficiale</strong>
+                                <span class="text-sm">Via Vincenzo Monti 8, 20123 Milano (MI)</span>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 shrink-0">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                            </div>
+                            <div>
+                                <strong class="block text-white font-semibold">Telefono Diretto</strong>
+                                <a href="tel:+393291742818" class="text-sm text-amber-400 hover:underline">+39 329 174 2818</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 shrink-0">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                            </div>
+                            <div>
+                                <strong class="block text-white font-semibold">Email</strong>
+                                <a href="mailto:info@dsconstruction.it" class="text-sm text-amber-400 hover:underline">info@dsconstruction.it</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- PROGETTI / GALLERY -->
-    <section id="progetti" class="py-24 bg-ink-50 border-t border-ink-100">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="text-center max-w-2xl mx-auto mb-16">
-                <span class="text-accent-600 text-xs font-bold uppercase tracking-[0.2em] mb-2 block">Portfolio</span>
-                <h2 class="font-display text-3xl sm:text-4xl font-bold text-ink-900">I nostri ultimi interventi a Milano</h2>
-            </div>
-
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white rounded-2xl overflow-hidden border border-ink-100 shadow-sm">
-                    <img src="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=800&q=80" alt="Attico a Milano" class="w-full h-60 object-cover">
-                    <div class="p-6">
-                        <span class="text-xs font-bold text-accent-600 uppercase tracking-wider">Residenziale</span>
-                        <h3 class="font-bold text-xl text-ink-900 mt-1">Attico Via Monti</h3>
-                        <p class="text-ink-600 text-sm mt-2">Ristrutturazione integrale di un immobile di rappresentanza con domotica avanzata.</p>
-                    </div>
-                </div>
-
-                <div class="bg-white rounded-2xl overflow-hidden border border-ink-100 shadow-sm">
-                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80" alt="Uffici Direzionali" class="w-full h-60 object-cover">
-                    <div class="p-6">
-                        <span class="text-xs font-bold text-accent-600 uppercase tracking-wider">Commerciale</span>
-                        <h3 class="font-bold text-xl text-ink-900 mt-1">Uffici Direzionali Duomo</h3>
-                        <p class="text-ink-600 text-sm mt-2">Restyling completo di spazi corporate con pareti in vetro e design acustico.</p>
-                    </div>
-                </div>
-
-                <div class="bg-white rounded-2xl overflow-hidden border border-ink-100 shadow-sm">
-                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Villa Moderna" class="w-full h-60 object-cover">
-                    <div class="p-6">
-                        <span class="text-xs font-bold text-accent-600 uppercase tracking-wider">Ville</span>
-                        <h3 class="font-bold text-xl text-ink-900 mt-1">Residenza Parco Sempione</h3>
-                        <p class="text-ink-600 text-sm mt-2">Efficientamento energetico totale e finiture in marmo pregiato.</p>
+                <!-- Box Azione Rapida -->
+                <div class="bg-slate-800 border border-slate-700 p-8 sm:p-10 rounded-3xl">
+                    <h4 class="text-xl font-bold text-white mb-4">Contatto Istantaneo</h4>
+                    <p class="text-slate-300 text-sm mb-6">Clicca sul pulsante sottostante per avviare una chat WhatsApp immediata con il nostro team commerciale.</p>
+                    <a href="https://wa.me/393291742818" target="_blank" class="w-full flex items-center justify-center bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-4 rounded-xl transition shadow-lg mb-4">
+                        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                        Scrivi su WhatsApp
+                    </a>
+                    <div class="text-center">
+                        <span class="text-xs text-slate-400">DS Construction Srl • P.IVA 01760030476</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- RECENSIONI GOOGLE -->
-    <section id="recensioni" class="py-24 bg-ink-950 text-white">
-        <div class="max-w-4xl mx-auto px-4 text-center">
-            <div class="flex items-center justify-center gap-1 text-accent-400 text-2xl mb-6">
-                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-            </div>
-            <blockquote class="font-display text-2xl sm:text-3xl italic leading-relaxed text-white/90">
-                "Professionalità e puntualità impeccabili. Gestione del cantiere strutturata e massima trasparenza in ogni fase dei lavori a Milano."
-            </blockquote>
-            <div class="mt-8">
-                <p class="font-bold text-lg text-white">Leveline Fanta</p>
-                <p class="text-sm text-accent-400 mt-1">Recensione Verificata Google Maps (5.0 / 5.0)</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- CONTATTI -->
-    <section id="contatti" class="py-24 bg-white">
-        <div class="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-                <span class="text-accent-600 text-xs font-bold uppercase tracking-[0.2em] mb-2 block">Contatti diretti</span>
-                <h2 class="font-display text-3xl sm:text-4xl font-bold text-ink-900">Parla con i nostri tecnici a Milano</h2>
-                <p class="text-ink-600 mt-4 text-lg">Siamo a tua disposizione per un sopralluogo o per discutere il tuo prossimo progetto immobiliare.</p>
-                
-                <div class="mt-8 space-y-6">
-                    <div class="flex items-start gap-4">
-                        <div class="w-12 h-12 rounded-xl bg-ink-900 text-accent-400 flex items-center justify-center text-lg shrink-0">
-                            <i class="fa-solid fa-location-dot"></i>
-                        </div>
-                        <div>
-                            <h3 class="font-bold text-ink-900">Sede Operativa</h3>
-                            <p class="text-ink-600 text-sm mt-0.5">Via Vincenzo Monti, 8 — 20123 Milano (MI)</p>
-                        </div>
-                    </div>
-
-                    <div class="flex items-start gap-4">
-                        <div class="w-12 h-12 rounded-xl bg-ink-900 text-accent-400 flex items-center justify-center text-lg shrink-0">
-                            <i class="fa-solid fa-phone"></i>
-                        </div>
-                        <div>
-                            <h3 class="font-bold text-ink-900">Telefono Diretto</h3>
-                            <p class="text-ink-600 text-sm mt-0.5"><a href="tel:+393291742818" class="text-accent-600 font-bold hover:underline">+39 329 174 2818</a></p>
-                        </div>
-                    </div>
-
-                    <div class="flex items-start gap-4">
-                        <div class="w-12 h-12 rounded-xl bg-ink-900 text-accent-400 flex items-center justify-center text-lg shrink-0">
-                            <i class="fa-solid fa-envelope"></i>
-                        </div>
-                        <div>
-                            <h3 class="font-bold text-ink-900">Email Ufficiale</h3>
-                            <p class="text-ink-600 text-sm mt-0.5"><a href="mailto:info@dsconstruction.it" class="text-accent-600 font-bold hover:underline">info@dsconstruction.it</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- FORM RAPIDO -->
-            <div class="bg-ink-50 p-8 sm:p-10 rounded-3xl border border-ink-100 shadow-sm">
-                <h3 class="font-bold text-xl text-ink-900 mb-6">Richiedi informazioni via form</h3>
-                <form onsubmit="event.preventDefault(); alert('Messaggio inviato con successo! Verrai ricontattato al più presto.');" class="space-y-4">
-                    <div>
-                        <label class="block text-xs font-bold uppercase tracking-wider text-ink-700 mb-1">Nome e Cognome *</label>
-                        <input type="text" required class="w-full h-12 px-4 rounded-xl border border-ink-200 bg-white focus:border-accent-500 focus:outline-none text-sm">
-                    </div>
-                    <div>
-                        <label class="block text-xs font-bold uppercase tracking-wider text-ink-700 mb-1">Telefono *</label>
-                        <input type="tel" required class="w-full h-12 px-4 rounded-xl border border-ink-200 bg-white focus:border-accent-500 focus:outline-none text-sm">
-                    </div>
-                    <div>
-                        <label class="block text-xs font-bold uppercase tracking-wider text-ink-700 mb-1">Messaggio o Progetto *</label>
-                        <textarea rows="4" required class="w-full p-4 rounded-xl border border-ink-200 bg-white focus:border-accent-500 focus:outline-none text-sm"></textarea>
-                    </div>
-                    <button type="submit" class="w-full h-13 rounded-xl bg-accent-500 hover:bg-accent-600 text-white font-bold text-base shadow transition">
-                        Invia Richiesta
-                    </button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="bg-ink-950 text-white/60 py-12 border-t border-white/10 text-xs">
-        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
-            <div>
-                <p class="font-display font-bold text-white text-base tracking-tight">DS CONSTRUCTION <span class="text-accent-500">S.R.L.</span></p>
-                <p class="mt-1">General Contractor &amp; Impresa Edile · Via Vincenzo Monti 8, 20123 Milano (MI)</p>
-                <p class="mt-1 text-white/40">P.IVA 01760030476 · info@dsconstruction.it</p>
-            </div>
-            <div>
-                <p>&copy; 2026 DS Construction Srl. Tutti i diritti riservati.</p>
-            </div>
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-slate-500 py-12 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between text-xs">
+            <p>© 2026 DS Construction Srl. Tutti i diritti riservati.</p>
+            <p class="mt-4 sm:mt-0">Milano, Lombardia, Italia</p>
         </div>
     </footer>
 
